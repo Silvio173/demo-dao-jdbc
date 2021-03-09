@@ -36,13 +36,13 @@ public class Program {
 	
 			System.out.println();
 			
-			System.out.println("====== Teste 4 = sellerInsert=========");
+			System.out.println("====== Teste 4 = sellerUpdate=========");
 			Seller sellerupdate = sellerDao.findById(6);
 			sellerupdate.setName("Leonado Ramos");
 			sellerDao.update(sellerupdate);
 			System.out.println();
 
-			System.out.println("====== Teste 4 = sellerInsert=========");
+			System.out.println("====== Teste 4 = sellerDelete=========");
 			sellerDao.deleteById(16);
 			sellerDao.deleteById(17);
 			System.out.println("Delete completed");
