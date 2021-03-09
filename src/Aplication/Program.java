@@ -41,6 +41,11 @@ public class Program {
 			sellerupdate.setName("Leonado Ramos");
 			sellerDao.update(sellerupdate);
 			System.out.println();
+
+			System.out.println("====== Teste 4 = sellerInsert=========");
+			sellerDao.deleteById(16);
+			sellerDao.deleteById(17);
+			System.out.println("Delete completed");
 			
 			System.out.println("====== Teste 3 = sellerFindAll=========");
 			List<Seller> lista = sellerDao.findAll();
