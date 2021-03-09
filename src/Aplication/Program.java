@@ -30,10 +30,16 @@ public class Program {
 			System.out.println();
 			
 			System.out.println("====== Teste 4 = sellerInsert=========");
-			Seller newseller = new Seller(null, "Helena Oliveira", "helena@uol.com.br", new Date(), 17100.50, department);
+			Seller newseller = new Seller(null, "Janete Titia", "janete@uol.com.br", new Date(), 1000.50, department);
 			sellerDao.insert(newseller);
 			System.out.println("Inseriu novo ID = " + newseller.getId());
+	
+			System.out.println();
 			
+			System.out.println("====== Teste 4 = sellerInsert=========");
+			Seller sellerupdate = sellerDao.findById(6);
+			sellerupdate.setName("Leonado Ramos");
+			sellerDao.update(sellerupdate);
 			System.out.println();
 			
 			System.out.println("====== Teste 3 = sellerFindAll=========");
